@@ -141,7 +141,7 @@ def to_ltx(a,
 
         colstr += '}'
     else:
-        colstr = '{}'
+        colstr = '{' + ('l' * ncol) + '}'
 
     out += r'\begin{' + latexarraytype + '}' +colstr+'\n'
 
